@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Life•Glitch Chat — Online</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">LG</div>
+        <div>
+          <div class="title">Life•Glitch Chat</div>
+          <div class="subtitle">Offline AI simulator • Voice input & replies</div>
+        </div>
+      </div>
+      <div class="controls">
+        <select id="persona">
+          <option value="professional">Professional</option>
+          <option value="friend">Friend</option>
+          <option value="coder">Coder</option>
+        </select>
+        <button id="newBtn" class="btn">New</button>
+        <button id="exportBtn" class="btn quiet">Export</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <aside class="sidebar">
+        <input id="titleInput" placeholder="Conversation title (optional)"/>
+        <div id="convoList" class="convo-list"></div>
+      </aside>
+
+      <section class="chat-area">
+        <div id="messages" class="messages" aria-live="polite"></div>
+
+        <div class="composer">
+          <div class="left-controls">
+            <button id="micBtn" title="Voice input">🎤</button>
+            <button id="ttsBtn" title="Toggle voice">🔊</button>
+          </div>
+          <textarea id="userInput" placeholder="Type a message — Enter to send"></textarea>
+          <div class="composer-row">
+            <button id="sendBtn" class="btn primary">Send</button>
+            <button id="clearBtn" class="btn quiet">Clear</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">Created by Life•Glitch Studio — Live on GitHub Pages</footer>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
